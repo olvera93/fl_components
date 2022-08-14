@@ -20,7 +20,11 @@ class Listview2Screen extends StatelessWidget {
           itemCount: options.length,
           itemBuilder: (context, i) => ListTile(
             title: Text(options[i]),
-            trailing: const Icon(Icons.arrow_forward_ios_outlined),
+            trailing: const Icon(
+              Icons.arrow_forward_ios_outlined,
+              color: Colors.indigo,
+            ),
+            onTap: () {},
           ),
           separatorBuilder: (_, __) => const Divider(),
         ));
